@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Minecraft
+Comment=Test the terminal running a command inside it
+Exec=java -jar /home/abelgeorgeantony/Downloads/TLauncher.v10/TLauncher.jar
+Icon=/home/abelgeorgeantony/Pictures/Logo/minecraft.png
+Terminal=false
+Type=Application
+Categories=Application;

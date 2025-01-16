@@ -1,0 +1,49 @@
+#!/bin/bash
+
+if [ "$EUID" -eq 0 ]
+then
+        echo -e "Do not run the script as root!\nScript stopped!"
+        exit
+fi
+
+# Functions that add the custom configs
+customconfigs=~/workspace/side/unixporn/configs
+### bash
+AddBash()
+{
+	cp -r $customconfigs/bash/. ~/
+	#source ~/.bashrc  #Need to make this work!!
+	echo "Hi from bash"
+}
+### sway
+AddSway()
+{
+	echo "Hi from sway"
+	mkdir -p ~/.config/sway
+	cp -r $customconfigs/sway/. ~/.config/sway/
+	swaymsg reload
+}
+### waybar
+AddWaybar()
+{
+	echo "Hi from waybar"
+	mkdir -p ~/.config/waybar
+	cp -r $customconfigs/waybar/. ~/.config/waybar/
+	swaymsg reload
+}
+### eww
+AddEww()
+{
+	mkdir -p ~/.config/eww
+	cp -r $customconfigs/eww/. ~/.config/eww/
+	eww reload
+}
+
+if [ "$1" == "--update-all" ]; then
+	AddBash
+	AddSway
+	AddWaybar
+	AddEww
+elif [ "$1" == "--update" ]; then
+	"Add"$2
+fi

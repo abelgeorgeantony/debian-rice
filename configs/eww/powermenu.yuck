@@ -1,0 +1,20 @@
+(defwidget powermenu_layout []
+        (box :class "powermenu-box" :orientation "vertical"
+                (powermenu_header)))
+
+
+(defwidget powermenu_header []
+	(box :class "powermenu-header" :valign "start"
+                (label :text "Power-Menu" :halign "start")
+                (button :onclick "eww close powermenu" :class
+ "powermenu-closebtn" :halign "end" "X")))
+
+
+
+(defwindow powermenu
+        :monitor 0 ;; to specify monitor
+        :stacking "fg"
+        :windowtype "normal"
+        :wm-ignore true
+        :geometry (geometry :width "80%" :height "62%" :anchor "center")
+        (powermenu_layout))
