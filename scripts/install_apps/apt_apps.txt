@@ -46,3 +46,4 @@ vim
 mdp
 taskwarrior
 gnome-multi-writer
+lsd
