@@ -10,8 +10,8 @@ fi
 mkdir -pv ~/workspace/main/
 mkdir ~/workspace/side/
 
-# Moving the unixporn directory to side projects directory
-mv ../../unixporn ~/workspace/side/
+# Moving the debianrice directory to side projects directory
+mv ../../debianrice ~/workspace/side/
 
 # Adding custom fonts(System-Wide)
 sudo mkdir -pv /usr/local/share/fonts/
@@ -31,7 +31,7 @@ echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *
 sudo apt update
 
 # Running the script that downloads the apps
-sudo ./install_apps/installapps.sh
+sudo ./apps/installapps.sh
 
 # Adding the custom configs
 configman --update-all

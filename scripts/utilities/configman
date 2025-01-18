@@ -7,29 +7,36 @@ then
 fi
 
 # Functions that add the custom configs
-customconfigs=~/workspace/side/unixporn/configs
+customconfigs=$(dirname "$0")/../../configs
 ### bash
 AddBash()
 {
 	cp -r $customconfigs/bash/. ~/
 	#source ~/.bashrc  #Need to make this work!!
-	echo "Hi from bash"
+	echo "Bash config updated!"
+}
+### nvim
+AddNvim()
+{
+	mkdir -p ~/.config/nvim
+	cp -r $customconfigs/nvim/. ~/.config/nvim/
+	echo "Nvim config updated!"
 }
 ### sway
 AddSway()
 {
-	echo "Hi from sway"
 	mkdir -p ~/.config/sway
 	cp -r $customconfigs/sway/. ~/.config/sway/
 	swaymsg reload
+	echo "Sway config updated!"
 }
 ### waybar
 AddWaybar()
 {
-	echo "Hi from waybar"
 	mkdir -p ~/.config/waybar
 	cp -r $customconfigs/waybar/. ~/.config/waybar/
 	swaymsg reload
+	echo "Waybar config updated!"
 }
 ### eww
 AddEww()
@@ -37,10 +44,12 @@ AddEww()
 	mkdir -p ~/.config/eww
 	cp -r $customconfigs/eww/. ~/.config/eww/
 	eww reload
+	echo "Eww config updated!"
 }
 
 if [ "$1" == "--update-all" ]; then
 	AddBash
+	AddNvim
 	AddSway
 	AddWaybar
 	AddEww

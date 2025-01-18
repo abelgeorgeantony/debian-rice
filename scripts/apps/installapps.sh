@@ -53,6 +53,7 @@ do
     printf "${outputmessage}"
 done
 
+exit 1
 
 # Manual installs
 ## Rust(Rustup)
