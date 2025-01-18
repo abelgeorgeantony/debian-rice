@@ -47,3 +47,4 @@ mdp
 taskwarrior
 gnome-multi-writer
 lsd
+imagemagick

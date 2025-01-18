@@ -37,14 +37,15 @@ do
 	if [ $bright == 0 ]
         then
                 brightnessctl -d "${device}" set 1
-		echo "Did the keyboard led turn on? y/n:"
+		echo "Did the keyboard led turn-on/blink-for-a-second? y/n:"
 		read lightconfirmation
 		if [ "$lightconfirmation" == "y" ]
 		then
+      echo "Keyboard LED device confirmed!\nIf accidentally chose another device, stop this process and start another one!"
 			break
 		fi
-        fi
-        scrlck_index=$scrlck_index+1
+  fi
+  scrlck_index=$scrlck_index+1
 done
 keyboardled=${scrlckdevices[$scrlck_index]}
 while [ 1 ]
@@ -54,6 +55,6 @@ do
 	then
 		brightnessctl -d "${keyboardled}" set 1
 	fi
-    	sleep 0.1
+  sleep 0.1
 done
 exit 0

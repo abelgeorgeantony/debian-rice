@@ -7,7 +7,7 @@ then
 fi
 
 # Functions that add the custom configs
-customconfigs=$(dirname "$0")/../../configs
+customconfigs=~/workspace/side/debianrice/configs
 ### bash
 AddBash()
 {

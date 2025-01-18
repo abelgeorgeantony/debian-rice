@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$EUID" -eq 0 ]
+then
+        echo -e "Do not run tiler as root!\nTiler stopped!"
+        exit
+fi
+
+tiles=~/workspace/side/debianrice/floorpapers
+
+## A simple command to make a floorpaper. Need to expand on this to make this
+## an awesome wallpaper tool.
+#composite -tile 101-2.png -size 1920x1200  xc:none wallpaper_out.png
