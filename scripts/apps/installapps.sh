@@ -96,6 +96,14 @@ ninja -C build install
 cd ..
 rm -rf mpvpaper
 
+## Ghostty
+git clone https://github.com/ghostty-org/ghostty
+cd ghostty
+zig build -Doptimize=ReleaseFast
+sudo cp zig-out/bin/ghostty /usr/local/bin
+cd ..
+rm -rf ghostty
+
 ## ani-cli
 git clone "https://github.com/pystardust/ani-cli.git"
 sudo cp ani-cli/ani-cli /usr/local/bin
