@@ -41,7 +41,7 @@ do
 		read lightconfirmation
 		if [ "$lightconfirmation" == "y" ]
 		then
-      echo "Keyboard LED device confirmed!\nIf accidentally chose another device, stop this process and start another one!"
+      echo -e "Keyboard LED device confirmed!\nIf accidentally chose another device, stop this process and start another one!"
 			break
 		fi
   fi

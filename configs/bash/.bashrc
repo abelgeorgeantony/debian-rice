@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -114,6 +114,7 @@ export PATH=$HOME/.local/bin:$PATH
 . "/home/abelgeorgeantony/.deno/env"
 
 
+## Custom Prompt
 ANSI_RED_BG="\033[0;101m"
 ANSI_GREEN="\033[1;32m"
 ANSI_BLUE="\033[1;34m"
@@ -136,4 +137,6 @@ PROMPT_COMMAND="update_prompt_style_vars"
 PS1='$(printf "$PROMPT_DIVIDER$PROMPT_TITLE")'
 
 
+## Executes the following on every new session
 fortuneteller.sh
+# mpv --vo=drm --no-video $(cat test.mpv)

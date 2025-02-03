@@ -49,3 +49,4 @@ gnome-multi-writer
 lsd
 imagemagick
 chafa
+sxhkd

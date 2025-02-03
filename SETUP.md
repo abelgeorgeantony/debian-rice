@@ -1,4 +1,4 @@
-# From Debian 12 base installation to SwayWM rice!
+# From Debian 12 base installation to GNOME rice!
 
 ## Index
  - [Editing sudoers list](#adding-a-user-to-the-sudoers-list)
@@ -81,6 +81,9 @@ Interface Text: 16\
 Monospace Text: 16\
 Scaling Factor: 1.30\
 I also change the default zoom of pages in firefox to **133%**. Firefox->Settings->Zoom->Default Zoom.
+
+### Setting up GNOME extensions
+Refer to ./guides/Gnome-Extensions.md for the list of extensions and its configurations.\
 
 ### Installing custom fonts
 My native language is Malayalam. So when browsing the web I sometimes come across content that is displayed in Malayalam, the characters are replaced by placeholder characters. This is because Malayalam fonts are not included with debian. To install a font:\

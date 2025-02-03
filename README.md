@@ -7,8 +7,3 @@
 **./configs** - config files for various softwares\
 **./scripts** - scripts that are useful\
 **./floorpapers** - tiles and tiler to build floorpapers(wallpapers)!
-
-GNOME extensions:\
-	Dash to Dock\
-	Hanabi Extension\
-	Blur my Shell
