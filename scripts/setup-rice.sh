@@ -35,3 +35,6 @@ sudo ./apps/installapps.sh
 
 # Adding the custom configs
 configman --update-all
+
+# Disabling gdm from autostarting
+sudo systemctl set-default multi-user.target
