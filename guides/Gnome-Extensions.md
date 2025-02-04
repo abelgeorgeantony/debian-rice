@@ -7,13 +7,16 @@
     Burn My Windows\
     Clipboard Indicator\
     Dash to Dock\
+    Eye on Cursor\
     Just Perfection\
     RunCat\
     Search Light\
     Top Bar Organizer\
 
-**Some extra extensions:**
+**Some extra extensions to look at:**
+    Hide Cursor\
     Hanabi Extension\
+
 
 --------------------------------------
 
