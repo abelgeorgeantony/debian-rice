@@ -1,0 +1,13 @@
+xwayland
+wayland-protocols
+foot
+firefox-esr
+snapd
+flatpak
+nautilus
+apostrophe
+blanket
+audacious
+qbittorrent
+gimp
+obs-studio

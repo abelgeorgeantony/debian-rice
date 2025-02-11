@@ -1,0 +1,4 @@
+dconf-editor
+gnome-boxes
+gnome-shell-extension-manager
+gnome-multi-writer

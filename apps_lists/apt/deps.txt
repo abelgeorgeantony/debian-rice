@@ -1,8 +1,5 @@
-build-essential
 uniutils
-clang
-xwayland
-wayland-protocols
+gettext
 pkg-config
 libdbusmenu-glib-dev
 libdbusmenu-gtk3-dev

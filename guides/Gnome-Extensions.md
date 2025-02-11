@@ -6,12 +6,17 @@
     Blur my Shell\
     Burn My Windows\
     Clipboard Indicator\
+    Custom Command Toggle\
     Dash to Dock\
+    Disable Menu Switching\
     Eye on Cursor\
+    GSConnect\
     Just Perfection\
     RunCat\
+    Screen word translate\
     Search Light\
     Top Bar Organizer\
+    Window Desaturation\
 
 **Some extra extensions to look at:**
     Hide Cursor\
