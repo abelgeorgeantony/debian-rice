@@ -20,6 +20,7 @@
 
 **Some extra extensions to look at:**
     Hide Cursor\
+    DownFall\
     Hanabi Extension\
 
 

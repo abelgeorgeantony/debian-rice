@@ -25,3 +25,4 @@ fortunes
 cowsay
 figlet
 lolcat
+typespeed
