@@ -17,7 +17,7 @@ declare -a flatpak_apps
 apt_apps=($(cat apt_apps.txt))
 apt_deps=($(cat apt_deps.txt))
 snap_apps+=("core" "snapd" "code --classic" "scrcpy" "steam" "telegram-desktop")
-flatpak_apps+=("net.lutris.Lutris" "com.bitwig.BitwigStudio")
+flatpak_apps=($(cat flatpak_apps.txt))
 
 outputmessage="APT apps:-\n"
 printf $outputmessage

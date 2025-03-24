@@ -1,9 +1,0 @@
-sway
-waybar
-swaylock
-swayidle
-fuzzel
-wofi
-imv
-pavucontrol
-wdisplays

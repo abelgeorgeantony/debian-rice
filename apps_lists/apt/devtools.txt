@@ -1,7 +1,0 @@
-build-essentials
-clang
-nodejs
-npm
-meson
-ninja-build
-cmake
