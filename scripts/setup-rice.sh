@@ -2,7 +2,7 @@
 
 if [ "$EUID" -eq 0 ]
 then
-	echo -e "Do not run the script as root!\nSetup aborted!"
+	echo -e "Do not run the script as root!\nEnter user password only when prompted!\nSetup aborted!"
 	exit
 fi
 
@@ -31,7 +31,7 @@ echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *
 sudo apt update
 
 # Running the script that downloads the apps
-sudo ./apps/installapps.sh
+sudo ../apps_lists/installapps.sh
 
 # Adding the custom configs
 configman --update-all
