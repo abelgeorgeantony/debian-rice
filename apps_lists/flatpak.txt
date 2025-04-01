@@ -1,5 +1,0 @@
-io.github.revisto.drum-machine
-com.github.johnfactotum.Foliate
-net.mkiol.SpeechNote
-net.lutris.Lutris
-com.bitwig.BitwigStudio

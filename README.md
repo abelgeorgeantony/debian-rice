@@ -4,6 +4,7 @@
 
 ### Repository structure:
 **./guides** - guides for setting up and things to know\
+**./apps** - apps lists and an install_script to batch install using the lists\
 **./configs** - config files for various softwares\
 **./scripts** - scripts that are useful\
 **./floorpapers** - tiles and tiler to build floorpapers(wallpapers)!
