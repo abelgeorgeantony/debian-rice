@@ -1,6 +1,7 @@
 uniutils
 gettext
 pkg-config
+libfmt-dev
 libdbusmenu-glib-dev
 libdbusmenu-gtk3-dev
 libgtk-layer-shell-dev

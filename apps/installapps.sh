@@ -30,6 +30,13 @@ flatpak install --user -y --noninteractive $(cat flatpak.txt)
 exit 1
 
 # Manual installs
+## salut
+git clone https://github.com/Wervice/salut
+cd ./salut
+g++ -o salutbin main.cpp -lfmt
+sudo cp salutbin /usr/local/bin
+cd ..
+
 ## Rust(Rustup)
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
