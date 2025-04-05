@@ -31,7 +31,7 @@ echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *
 sudo apt update
 
 # Running the script that downloads the apps
-sudo ../apps_lists/installapps.sh
+sudo ../apps/installapps.sh
 
 # Adding the custom configs
 configman --update-all

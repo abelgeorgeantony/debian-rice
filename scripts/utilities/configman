@@ -22,37 +22,10 @@ AddNvim()
 	cp -r $customconfigs/nvim/. ~/.config/nvim/
 	echo "Nvim config updated!"
 }
-### sway
-AddSway()
-{
-	mkdir -p ~/.config/sway
-	cp -r $customconfigs/sway/. ~/.config/sway/
-	swaymsg reload
-	echo "Sway config updated!"
-}
-### waybar
-AddWaybar()
-{
-	mkdir -p ~/.config/waybar
-	cp -r $customconfigs/waybar/. ~/.config/waybar/
-	swaymsg reload
-	echo "Waybar config updated!"
-}
-### eww
-AddEww()
-{
-	mkdir -p ~/.config/eww
-	cp -r $customconfigs/eww/. ~/.config/eww/
-	eww reload
-	echo "Eww config updated!"
-}
 
 if [ "$1" == "--update-all" ]; then
 	AddBash
 	AddNvim
-	AddSway
-	AddWaybar
-	AddEww
 elif [ "$1" == "--update" ]; then
 	"Add"$2
 fi

@@ -1,11 +1,8 @@
 #!/bin/bash
 
 declare -a apt_pkgs
-declare -a snap_apps
-declare -a flatpak_apps
-apt_pkgs=($(cat apt.txt))
-snap_apps+=("core" "snapd" "code --classic" "scrcpy" "steam" "telegram-desktop")
 
+apt_pkgs=($(cat apt.txt))
 outputmessage="APT:-\n"
 printf $outputmessage
 for pkg in ${apt_pkgs[@]};
@@ -105,18 +102,8 @@ rm -rf scrcpy
 
 exit 1
 
-printf "\nSnap:-"
-outputmessage="${outputmessage}\nSnap:-"
-for app in ${snap_apps[@]};
-do
-	printf "\nTrying to install $app\n"
-	msg=$(sudo snap install $app)
-	outputmessage="${outputmessage}\n${msg}\n"
-done
 
 #Apps to download from other source:
 ##	obs studio
 ##	virtualbox
-##	chrome
-##	Genshin Impact
 ##	TLauncher Minecraft
