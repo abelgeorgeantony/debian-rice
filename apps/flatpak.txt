@@ -1,5 +1,7 @@
-io.github.amit9838.mousam
+org.telegram.desktop
 io.github.ungoogled_software.ungoogled_chromium
+it.mijorus.whisper
+io.github.nokse22.minitext
 md.obsidian.Obsidian
 com.github.wwmm.easyeffects
 io.github.revisto.drum-machine
@@ -7,5 +9,6 @@ io.github.Soundux
 com.github.johnfactotum.Foliate
 net.mkiol.SpeechNote
 net.lutris.Lutris
+space.gaiasky.GaiaSky
 com.pokemmo.PokeMMO
 com.bitwig.BitwigStudio

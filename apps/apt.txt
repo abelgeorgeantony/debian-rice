@@ -63,6 +63,7 @@ vim
 mdp
 taskwarrior
 lsd
+cool-retro-term
 imagemagick
 chafa
 sl
