@@ -20,7 +20,7 @@ libgtk-4-media-gstreamer
 unifont
 fonts-material-design-icons-iconfont
 fonts-font-awesome
-build-essentials
+build-essential
 clang
 nodejs
 npm
@@ -29,14 +29,11 @@ ninja-build
 cmake
 xwayland
 wayland-protocols
-foot
 firefox-esr
-snapd
 flatpak
 nautilus
 apostrophe
 blanket
-audacious
 qbittorrent
 gimp
 obs-studio
@@ -72,13 +69,5 @@ fortunes
 cowsay
 figlet
 lolcat
-typespeed
-sway
-waybar
-swaylock
-swayidle
-fuzzel
-wofi
 imv
 pavucontrol
-wdisplays

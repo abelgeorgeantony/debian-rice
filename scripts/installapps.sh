@@ -22,7 +22,7 @@ done
 clear
 
 printf "\nFlatpak:-\n"
-flatpak install --user -y --noninteractive flathub $(cat flatpak.txt)
+flatpak install flathub --user -y --noninteractive $(cat flatpak.txt)
 
 exit 1
 
