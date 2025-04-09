@@ -65,9 +65,11 @@ imagemagick
 chafa
 sl
 cmatrix
+pipes-sh
 fortunes
 cowsay
 figlet
+dialog
 lolcat
 imv
 pavucontrol
