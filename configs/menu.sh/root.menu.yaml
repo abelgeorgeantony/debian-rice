@@ -1,0 +1,22 @@
+#!/usr/bin/env menu.sh
+---
+apps:
+  nvim:
+    run: nvim
+  firefox:
+    run: firefox-esr
+system:
+  start-gdm:
+    run: sudo systemctl start gdm
+  brightness:
+    increase:
+      button: brightnessctl set +20%
+    decrease:
+      button: brightnessctl set 20%-
+power:
+  shutdown:
+    run: sudo shutdown now
+  reboot:
+    run: sudo reboot
+  logout:
+    run: logout
