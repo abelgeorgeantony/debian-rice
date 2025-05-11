@@ -2,7 +2,7 @@
 
 declare -a apt_pkgs
 
-apt_pkgs=($(cat apt.txt))
+apt_pkgs=($(cat ../apps/apt.txt))
 outputmessage="APT:-\n"
 printf $outputmessage
 for pkg in ${apt_pkgs[@]};
@@ -22,7 +22,8 @@ done
 clear
 
 printf "\nFlatpak:-\n"
-flatpak install flathub --user -y --noninteractive $(cat flatpak.txt)
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub --user -y --noninteractive $(cat ../apps/flatpak.txt)
 
 exit 1
 

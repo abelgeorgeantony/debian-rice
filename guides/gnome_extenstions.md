@@ -1,6 +1,6 @@
 # Gnome Extensions
 
-**Extensions currently being used:**
+**Extensions currently being used:**\
     Auto select headset\
     Bluetooth Quick Connect\
     Blur my Shell\
@@ -11,14 +11,13 @@
     Disable Menu Switching\
     Eye on Cursor\
     GSConnect\
+    Just Another Search Bar\
     Just Perfection\
+    Light Dict\
     RunCat\
-    Screen word translate\
-    Search Light\
-    Top Bar Organizer\
     Window Desaturation\
 
-**Some extra extensions to look at:**
+**Some extra extensions to look at:**\
     Hide Cursor\
     DownFall\
     Blurt\
