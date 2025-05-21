@@ -9,17 +9,19 @@
     Custom Command Toggle\
     Dash to Dock\
     Disable Menu Switching\
+    DownFall\
     Eye on Cursor\
+    Gnome 4x UI Improvements\
     GSConnect\
+    Hide Cursor\
     Just Another Search Bar\
     Just Perfection\
     Light Dict\
     RunCat\
-    Window Desaturation\
+    Top Bar Organizer(GNOME 48 incompatible)\
+    Window Desaturation
 
 **Some extra extensions to look at:**\
-    Hide Cursor\
-    DownFall\
     Blurt\
 
 

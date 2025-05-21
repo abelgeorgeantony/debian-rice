@@ -22,7 +22,7 @@ done
 clear
 
 printf "\nFlatpak:-\n"
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub --user -y --noninteractive $(cat ../apps/flatpak.txt)
 
 exit 1
