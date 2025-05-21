@@ -15,7 +15,6 @@ libv4l-dev
 libwayland-dev
 libegl-dev
 libmpv-dev
-python3-i3ipc
 libgtk-4-media-gstreamer
 unifont
 fonts-material-design-icons-iconfont
