@@ -35,6 +35,7 @@ apostrophe
 blanket
 qbittorrent
 gimp
+inkscape
 obs-studio
 dconf-editor
 gnome-boxes
