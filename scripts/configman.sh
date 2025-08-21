@@ -60,7 +60,7 @@ elif [ "$1" == "--save-all" ]; then
   SaveTerminal
   SaveNvim
   SaveGExtensions
-elif [ "$1" == "--save"]; then
+elif [ "$1" == "--save" ]; then
   "Save"$2
 else
   echo -e $HelpText

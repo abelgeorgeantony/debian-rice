@@ -19,11 +19,17 @@ do
     printf "${outputmessage}"
 done
 
-clear
+##clear
 
 printf "\nFlatpak:-\n"
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub --user -y --noninteractive $(cat ../apps/flatpak.txt)
+
+##clear
+
+printf "\nInstalling NB note taker:-\n"
+sudo npm install -g nb.sh
+sudo nb env install
 
 exit 1
 

@@ -115,27 +115,34 @@ export PATH=$HOME/.local/bin:$PATH
 
 
 ## Custom Prompt
-ANSI_RED_BG="\033[0;101m"
-ANSI_GREEN="\033[1;32m"
-ANSI_BLUE="\033[1;34m"
-ANSI_RESET="\033[0m"
-PROMPT_DIVIDER=""
-PROMPT_TITLE=""
-update_prompt_style_vars(){
-	PROMPT_DIVIDER="$ANSI_RED_BG"
-	col_len="$(tput cols)"
-	i=0
-	while [ $i -lt $col_len ];
-	do
-		PROMPT_DIVIDER="$PROMPT_DIVIDER "
-		i=$(( $i + 1 ))
-	done
+update_prompt() {
+    # Define ANSI codes locally to keep them contained
+    local ANSI_RED_BG="\[\033[0;101m\]"
+    local ANSI_GREEN="\[\033[1;32m\]"
+    local ANSI_BLUE="\[\033[1;34m\]"
+    local ANSI_RESET="\[\033[0m\]"
 
-	PROMPT_TITLE="$ANSI_RESET\n$ANSI_GREEN[$(hostname)]$(whoami) @ $(date +%T)\n$ANSI_BLUE$(pwd)\n$ANSI_GREEN>>$ANSI_RESET"
+    # --- 1. Build the full-width divider ---
+    local PROMPT_DIVIDER="$ANSI_RED_BG"
+    local cols
+    cols=$(tput cols)
+    # A more efficient way to create the repeated spaces
+    PROMPT_DIVIDER+=$(printf "%${cols}s")
+    
+    # --- 2. Build the multi-line title ---
+    # Note: We use \n directly here, not \[ \n \]. Bash handles newlines in PS1 correctly.
+    local PROMPT_TITLE="$ANSI_RESET\n"
+    PROMPT_TITLE+="$ANSI_GREEN[$(hostname)]$(whoami) @ $(date +%T)\n"
+    PROMPT_TITLE+="$ANSI_BLUE$(pwd)\n"
+    PROMPT_TITLE+="$ANSI_GREEN>>$ANSI_RESET"
+    
+    # --- 3. Assign the final, complete string to PS1 ---
+    # This is the key change. PS1 is now a simple string.
+    PS1="$PROMPT_DIVIDER$PROMPT_TITLE"
 }
-PROMPT_COMMAND="update_prompt_style_vars"
-PS1='$(printf "$PROMPT_DIVIDER$PROMPT_TITLE")'
 
+# Set PROMPT_COMMAND to run our function before each prompt
+PROMPT_COMMAND="update_prompt"
 
 ## Executes the following on every new session
 fortuneteller.sh

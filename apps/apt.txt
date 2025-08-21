@@ -16,10 +16,13 @@ libwayland-dev
 libegl-dev
 libmpv-dev
 libgtk-4-media-gstreamer
+gir1.2-gda-5.0
+gir1.2-gnomedesktop-3.0
 unifont
 fonts-material-design-icons-iconfont
 fonts-font-awesome
 build-essential
+cloc
 clang
 nodejs
 npm
@@ -31,6 +34,7 @@ wayland-protocols
 firefox-esr
 flatpak
 nautilus
+wike
 apostrophe
 blanket
 qbittorrent
@@ -57,6 +61,7 @@ moc
 tmux
 neovim
 vim
+patat
 mdp
 taskwarrior
 lsd

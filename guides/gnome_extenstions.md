@@ -6,20 +6,25 @@
     Blur my Shell\
     Burn My Windows\
     Clipboard Indicator\
+    Color Picker\
     Custom Command Toggle\
     Dash to Dock\
+    Desktop Icons NG (DING)\
     Disable Menu Switching\
-    DownFall\
     Eye on Cursor\
     Gnome 4x UI Improvements\
     GSConnect\
     Hide Cursor\
-    Just Another Search Bar\
     Just Perfection\
     Light Dict\
+    One Thing\
+    Rounded Window Corners Reborn\ ##causes blurred windows in overview
     RunCat\
-    Top Bar Organizer(GNOME 48 incompatible)\
-    Window Desaturation
+    Search Light\
+    Top Bar Organizer\
+    Weather O'Clock\
+    Window Desaturation\ ##causes blurred windows in overview
+    Zed Search Provider
 
 **Some extra extensions to look at:**\
     Blurt\
