@@ -1,6 +1,7 @@
 org.telegram.desktop
 io.github.ungoogled_software.ungoogled_chromium
 dev.zed.Zed
+be.alexandervanhee.gradia
 dev.zelikos.rollit
 org.pipewire.Helvum
 it.mijorus.whisper

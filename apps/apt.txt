@@ -22,6 +22,7 @@ unifont
 fonts-material-design-icons-iconfont
 fonts-font-awesome
 build-essential
+dia
 cloc
 clang
 nodejs
