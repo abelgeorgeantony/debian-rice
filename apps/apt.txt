@@ -27,6 +27,8 @@ build-essential
 dia
 cloc
 clang
+ruby-full
+default-jdk
 nodejs
 npm
 meson
@@ -64,6 +66,8 @@ moc
 tmux
 neovim
 vim
+tesseract-ocr
+tesseract-ocr-all
 patat
 mdp
 taskwarrior
