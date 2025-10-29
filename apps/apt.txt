@@ -85,3 +85,4 @@ dialog
 lolcat
 imv
 pavucontrol
+hashcat
