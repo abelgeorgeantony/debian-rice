@@ -34,6 +34,8 @@ npm
 meson
 ninja-build
 cmake
+prometheus
+cabextract
 xwayland
 wayland-protocols
 firefox-esr
@@ -83,6 +85,8 @@ cowsay
 figlet
 dialog
 lolcat
+supertuxkart
+cava
 imv
 pavucontrol
 hashcat

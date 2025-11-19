@@ -60,13 +60,11 @@ sudo cp zig-out/bin/ghostty /usr/local/bin
 cd ..
 rm -rf ghostty
 
-## ani-cli
-git clone "https://github.com/pystardust/ani-cli.git"
-sudo cp ani-cli/ani-cli /usr/local/bin
-rm -rf ani-cli
-
 ## Deno JS
 curl -fsSL https://deno.land/install.sh | bash
+
+## Ollama
+curl -fsSL https://ollama.com/install.sh | sh
 
 ## scrcpy
 git clone https://github.com/Genymobile/scrcpy

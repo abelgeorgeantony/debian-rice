@@ -21,6 +21,7 @@
     Rounded Window Corners Reborn\ ##causes blurred windows in overview
     RunCat\
     Search Light\
+    SoundBar\
     Top Bar Organizer\
     Weather O'Clock\
     Window Desaturation\ ##causes blurred windows in overview
