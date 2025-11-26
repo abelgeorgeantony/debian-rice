@@ -31,6 +31,9 @@ ruby-full
 default-jdk
 nodejs
 npm
+php
+composer
+jekyll
 meson
 ninja-build
 cmake
@@ -90,3 +93,6 @@ cava
 imv
 pavucontrol
 hashcat
+nmap
+blender
+godot3
