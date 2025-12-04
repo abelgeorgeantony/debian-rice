@@ -9,7 +9,10 @@ do
 done
 tellerscount="${#tellers[@]}"
 randomtellerindex=$(($RANDOM%$tellerscount))
-#echo "${tellers[$randomtellerindex]}"
 randomteller="${tellers[$randomtellerindex]}"
 
-fortune -s -a | cowsay -f $randomteller | lolcat
+if [[ "$1" == "--no-lol" ]]; then
+  fortune -s -a | cowsay -f $randomteller
+else
+  fortune -s -a | cowsay -f $randomteller | lolcat
+fi

@@ -60,6 +60,7 @@ blueman
 acpi
 gammastep
 curl
+at
 tree
 fzf
 bat
