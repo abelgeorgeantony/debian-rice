@@ -1,1 +1,5 @@
+set show-all-if-ambiguous on
+set visible-stats on
+set completion-prefix-display-length 2
+set completion-map-case on
 "\ed":"root.menu.yaml\n"

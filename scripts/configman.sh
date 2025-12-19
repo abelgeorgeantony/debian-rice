@@ -9,11 +9,12 @@ fi
 HelpText="This is the CONFIGuration MANager script of my Debian rice!\n\nThere are 2 modes for this script, update mode and save mode.\nIn update mode the script fetches the custom configs from this repository and updates it for the specified software.\nIn save mode the script fetches the currently applied configuration and saves it in the local copy of this repository.\n"
 
 # Functions that add the custom configs
-customconfigs=~/workspace/side/debianrice/configs
+customconfigs=~/workspace/side/debian-rice/configs
 ### bash
 UpdateTerminal()
 {
-	cp -r $customconfigs/bash/. ~/
+	cp -r $customconfigs/bash/.inputrc ~/
+  cp -r $customconfigs/bash/.bashrc ~/
 	cp -r $customconfigs/menu.sh/. ~/.local/bin/
 	#source ~/.bashrc  #Need to make this work!!
 	#bind -f ~/.inputrc  #Need to make this work!!

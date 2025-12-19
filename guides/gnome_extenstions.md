@@ -5,8 +5,8 @@
     Bluetooth Quick Connect\
     Blur my Shell\
     Burn My Windows\
-    Clipboard Indicator\
     Color Picker\
+    Copyous\
     Custom Command Toggle\
     Dash to Dock\
     Desktop Icons NG (DING)\
