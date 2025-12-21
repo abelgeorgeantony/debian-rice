@@ -27,12 +27,15 @@ build-essential
 dia
 cloc
 clang
+rustup
 ruby-full
 default-jdk
 nodejs
 npm
 php
 composer
+golang-go
+python3
 jekyll
 meson
 ninja-build

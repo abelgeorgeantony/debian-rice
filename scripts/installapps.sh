@@ -25,11 +25,6 @@ printf "\nFlatpak:-\n"
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub --user -y --noninteractive $(cat ../apps/flatpak.txt)
 
-##clear
-
-printf "\nInstalling NB note taker:-\n"
-sudo npm install -g nb.sh
-sudo nb env install
 
 exit 1
 
@@ -48,9 +43,6 @@ cd ./salut
 g++ -o salutbin main.cpp -lfmt
 sudo cp salutbin /usr/local/bin
 cd ..
-
-## Rust(Rustup)
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ## Ghostty
 git clone https://github.com/ghostty-org/ghostty
