@@ -117,13 +117,14 @@ export PATH=$HOME/.local/bin:$PATH
 ## Custom Prompt
 update_prompt() {
     # Define ANSI codes locally to keep them contained
-    local ANSI_RED_BG="\[\033[0;101m\]"
-    local ANSI_GREEN="\[\033[1;32m\]"
-    local ANSI_BLUE="\[\033[1;34m\]"
-    local ANSI_RESET="\[\033[0m\]"
+    local ANSI_HI_BG_red="\[\033[0;101m\]"
+    local ANSI_BG_green="\[\033[42m\]"
+    local ANSI_HI_green="\[\033[1;32m\]"
+    local ANSI_HI_blue="\[\033[1;34m\]"
+    local ANSI_reset="\[\033[0m\]"
 
     # --- 1. Build the full-width divider ---
-    local PROMPT_DIVIDER="$ANSI_RED_BG"
+    local PROMPT_DIVIDER="$ANSI_BG_green"
     local cols
     cols=$(tput cols)
     # A more efficient way to create the repeated spaces
@@ -131,10 +132,10 @@ update_prompt() {
     
     # --- 2. Build the multi-line title ---
     # Note: We use \n directly here, not \[ \n \]. Bash handles newlines in PS1 correctly.
-    local PROMPT_TITLE="$ANSI_RESET\n"
-    PROMPT_TITLE+="$ANSI_GREEN[$(hostname)]$(whoami) @ $(date +%T)\n"
-    PROMPT_TITLE+="$ANSI_BLUE$(pwd)\n"
-    PROMPT_TITLE+="$ANSI_GREEN>>$ANSI_RESET"
+    local PROMPT_TITLE="$ANSI_reset\n"
+    PROMPT_TITLE+="$ANSI_HI_green[$(hostname)]$(whoami) @ $(date +%T)\n"
+    PROMPT_TITLE+="$ANSI_HI_blue$(pwd)\n"
+    PROMPT_TITLE+="$ANSI_HI_green>>$ANSI_reset"
     
     # --- 3. Assign the final, complete string to PS1 ---
     # This is the key change. PS1 is now a simple string.
@@ -146,4 +147,3 @@ PROMPT_COMMAND="update_prompt"
 
 ## Executes the following on every new session
 fortuneteller.sh
-# mpv --vo=drm --no-video $(cat test.mpv)
